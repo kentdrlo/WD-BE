@@ -17,9 +17,10 @@ $result = executeQuery($query);
 <html>
 
 <head>
-  <title>W3.CSS Template</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Islands</title>
+  <link rel="icon" type="image/png" href="images/personalityImg/icon0.png">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -55,6 +56,7 @@ $result = executeQuery($query);
   p.shortDesc {
     font-weight: bold;
   }
+
 </style>
 
 <body>
@@ -85,6 +87,7 @@ $result = executeQuery($query);
             <a href="view.php?islandOfPersonalityID=<?php echo $islandOfPersonalityID; ?>">
               <button type="button" class="btn btn-dark">Go to Island</button>
             </a>
+            
           </div>
         </div>
       </div>

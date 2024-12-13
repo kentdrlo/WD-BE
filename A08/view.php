@@ -15,16 +15,17 @@ if (isset($_GET['islandOfPersonalityID'])) {
 <html>
 
 <head>
-  <title>W3.CSS Template</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Core Memories</title>
+  <link rel="icon" type="image/png" href="images/personalityImg/icon0.png">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 </head>
 <style>
   body {
-    background-image: linear-gradient(to bottom,rgb(208, 208, 208) 20% ,rgb(0, 0, 0) 70%);
+    background-image: linear-gradient(to bottom, rgb(208, 208, 208) 20%, rgb(0, 0, 0) 70%);
   }
-  
+
   .contentOne {
     width: 80%;
     margin-top: 20px;
@@ -71,10 +72,32 @@ if (isset($_GET['islandOfPersonalityID'])) {
 
   img {
     border-radius: 30px;
+    margin-top: -90px;
+  }
+
+  a button{
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: -60px;
+    font-weight: bold;
+    text-decoration:none;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    width: 110px;
+    box-shadow: 0 20px 20px -10px rgb(43, 43, 43);
+    border: 1px solid rgb(31, 31, 31);
+    
   }
 </style>
 
 <body>
+  <a href="index.php" style="text-decoration:none;">
+    <button class="button" >back</button>
+  </a>
+
   <?php
   if (mysqli_num_rows($memoriesResult) > 0) {
     while ($memoriesRow = mysqli_fetch_assoc($memoriesResult)) {
@@ -93,6 +116,7 @@ if (isset($_GET['islandOfPersonalityID'])) {
           </div>
         </div>
       </div>
+
 
       <?php
     }
